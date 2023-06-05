@@ -3,7 +3,10 @@
         <h4 class="subtitle" v-if="subtitle">
             <span class="theme-gradient" v-html="subtitle"/>
         </h4>
-        <h2 class="title w-600" v-html="title" style="font-size: 32px;line-height: 1.455"/>
+        <div style="display: flex;align-items: center;" class="title">
+            <img src="../../../assets/images/logo/logo-title.png" style="margin-right: 24px;"/>
+            <div class="w-600" v-html="title" style="font-size: 32px;line-height: 1.455;flex: 1;" />
+        </div>
         <p v-if="description" class="description b1" v-html="description"/>
     </div>
 

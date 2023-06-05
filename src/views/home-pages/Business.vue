@@ -11,13 +11,12 @@
                             <p class="description" data-aos="fade-up" data-aos-delay="130">
                                 By guiding the yield potential and governance power of VELO and veVELO  holders, Augusta creates unprecedented value within the Optimism ecosystem.
                             </p>
-                            <div class="button-group mt--30 mt_sm--20" data-aos="fade-up" data-aos-delay="160">
-                                <a class="btn-default btn-medium btn-icon"
-                                   href="#">
-                                    Purchase Now
-                                    <Icon name="arrow-right" size="20" icon-class="icon"/>
-                                </a>
-                            </div>
+                            <Counter
+                                :counter-style="6"
+                                text-align="center"
+                                :counter-data="counterFiveData"
+                                column="col-lg-3 col-md-6 col-sm-6 col-12"
+                            />
                         </div>
                     </div>
                 </div>
@@ -40,11 +39,33 @@
                         />
                     </div>
                 </div>
-                <ServiceOne
-                    service-style="service__style--1 icon-circle-style"
-                    text-align="center"
-                    icon-size="39"
-                />
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="counter-style-6">
+                            <div class="counter-title">
+                                Yield Boosting Capabilities
+                            </div>
+                            <div class="counter-content">
+                                Boost your VELO and veVELO returns with Augusta's yield-optimization features, designed to maximize your earning potential.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="counter-style-6">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 52.8px">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="counter-style-6">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="counter-style-6">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -138,92 +159,33 @@
     import BlogPostMixin from '../../mixins/BlogPostMixin'
     import BlogPost from '../../components/blog/BlogPost'
     import ServiceOne from '../../components/elements/service/ServiceOne'
+    import Counter from "../../components/elements/counterUp/Counter"
 
     export default {
         name: 'Business',
-        components: {BlogPost, Pricing, Accordion, Timeline, Tab, SectionTitle, Separator, Icon, Layout, ServiceOne},
+        components: {BlogPost, Pricing, Accordion, Timeline, Tab, SectionTitle, Separator, Icon, Layout, ServiceOne, Counter},
         mixins: [BlogPostMixin],
         data() {
             return {
-                tabData: {
-                    tabImage: 'tabs-01.jpg',
-                    tabContent: [
-                        {
-                            id: 1,
-                            menu: 'strategy',
-                            content: `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ipsa, deleniti soluta minima minus asperiores doloribus enim vitae obcaecati fuga assumenda laudantium nemo odio provident nulla exercitationem tempore corrupti! Nemo.</p><p>Quibusdam ipsa, deleniti soluta minima minus asperiores doloribus enim vitae obcaecati fuga assumenda laudantium nemo odio provident nulla exercitationem tempore corrupti! Nemo.</p>`,
-                        },
-                        {
-                            id: 2,
-                            menu: 'reporting',
-                            content: `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ipsa, deleniti soluta minima minus asperiores doloribus enim vitae obcaecati fuga assumenda laudantium nemo odio provident nulla exercitationem tempore corrupti! Nemo.</p><p>Quibusdam ipsa, deleniti soluta minima minus asperiores doloribus enim vitae obcaecati fuga assumenda laudantium nemo odio provident nulla exercitationem tempore corrupti! Nemo.</p>`,
-                        },
-                        {
-                            id: 3,
-                            menu: 'development',
-                            content: `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ipsa, deleniti soluta minima minus asperiores doloribus enim vitae obcaecati fuga assumenda laudantium nemo odio provident nulla exercitationem tempore corrupti! Nemo.</p><p>Quibusdam ipsa, deleniti soluta minima minus asperiores doloribus enim vitae obcaecati fuga assumenda laudantium nemo odio provident nulla exercitationem tempore corrupti! Nemo.</p>`,
-                        }
-                    ]
-                },
-                timelineData: [
+                counterFiveData: [
                     {
-                        id: '1',
-                        title: 'Knowledge',
-                        description: 'Present all available features in Essentials.',
+                        number: 16233743,
+                        title: 'VELO locked',
                     },
                     {
-                        id: '2',
-                        title: 'Working',
-                        description: 'All Feature available features in Essentials.',
+                        number: 30.81,
+                        title: 'APY',
+                        suffix: '%',
+                        decimals: 2
                     },
                     {
-                        id: '3',
-                        title: 'Solution',
-                        description: 'Popular Feature available features in Essentials.',
-                    },
-                    {
-                        id: '4',
-                        title: 'Process',
-                        description: 'Latest Feature available features in Essentials.',
-                    },
-                ],
-                pricingData: [
-                    {
-                        title: 'Free',
-                        currency: '$',
-                        price: '29',
-                        subtitle: 'USD Per Month',
-                        features: [
-                            {title: '5 PPC Campaigns'},
-                            {title: 'Digital Marketing'},
-                            {title: 'Marketing Agency'},
-                            {title: 'Seo Friendly'},
-                            {title: 'UI/UX designs'},
-                        ],
-                        btn: {
-                            text: 'Purchase Now',
-                            link: '#'
-                        }
-                    },
-                    {
-                        title: 'Business',
-                        currency: '$',
-                        price: '50',
-                        subtitle: 'USD Per Month',
-                        features: [
-                            {title: '5 PPC Campaigns'},
-                            {title: 'Keep 100% Royalties'},
-                            {title: 'App Development'},
-                            {title: 'Seo Friendly'},
-                            {title: 'UI/UX designs'},
-                        ],
-                        btn: {
-                            text: 'Purchase Now',
-                            link: '#'
-                        },
-                        isActive: true
+                        number: 311.21,
+                        title: 'Total Value locked',
+                        suffix: 'm',
+                        prefix: '$',
+                        decimals: 2
                     }
-                ],
+                ]
             }
         }
     }

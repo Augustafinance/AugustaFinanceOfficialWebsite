@@ -15,7 +15,9 @@
         }
     }
     .title {
-        
+        margin-bottom: 20px;
+        color: white;
+        @extend %transition;
     }
     .description {
         br {

@@ -1,123 +1,168 @@
 /* Counter Style One  */
 
 .counter-style-1 {
-    .count-number {
-        @extend .theme-gradient;
-        font-size: 90px;
-        @media #{$sm-layout} {
-            font-size: 62px;
-        }
-        @media #{$large-mobile} {
-            font-size: 45px;
-        }
+  .count-number {
+    @extend .theme-gradient;
+    font-size: 90px;
+    @media #{$sm-layout} {
+      font-size: 62px;
     }
-    .title {
-        font-size: 20px;
-        line-height: 1.3em;
-        font-weight: 500;
-        margin-top: 0;
-        margin-bottom: 0;
+    @media #{$large-mobile} {
+      font-size: 45px;
     }
+  }
+  .title {
+    font-size: 20px;
+    line-height: 1.3em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
-
 
 .counter-style-2 {
-    margin-top: 30px;
+  margin-top: 30px;
+  .count-number {
+    font-size: 44px;
+    background-color: var(--color-blackest);
+    display: inline-block;
+    min-width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 150px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-weight: 500;
+    color: var(--color-white);
+  }
+  .title {
+    font-size: 20px;
+    line-height: 1.3em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .description {
+    line-height: 1.8;
+    padding-right: 16%;
+    margin: 0;
+  }
+  &.color-variation {
     .count-number {
-        font-size: 44px;
-        background-color: var(--color-blackest);
-        display: inline-block;
-        min-width: 150px;
-        height: 150px;
-        border-radius: 100%;
-        text-align: center;
-        line-height: 150px;
-        margin-bottom: 20px;
-        padding: 0 20px;
-        font-weight: 500;
-        color: var(--color-white);
+      background-color: var(--color-primary-darker);
+      color: var(--color-primary);
     }
-    .title {
-        font-size: 20px;
-        line-height: 1.3em;
-        font-weight: 500;
-        margin-top: 0;
-        margin-bottom: 10px;
+  }
+  &.border-style {
+    .count-number {
+      background-color: transparent;
+      border: 2px solid var(--color-border);
     }
+  }
+  &.text-center {
     .description {
-        line-height: 1.8;
-        padding-right: 16%;
-        margin: 0;
+      padding: 0 10%;
     }
-    &.color-variation { 
-        .count-number {
-            background-color: var(--color-primary-darker);
-            color: var(--color-primary);
-        }
-    }
-    &.border-style {
-        .count-number {
-            background-color: transparent;
-            border: 2px solid var(--color-border);
-        }
-    }
-    &.text-center {
-        .description {
-            padding: 0 10%;
-        }
-    }
+  }
 }
 
-
-[class*=col]:nth-child(2) {
-    .counter-style-2 {
-        &.color-variation { 
-            .count-number {
-                background-color: var(--color-secondary-darker);
-                color: var(--color-secondary);
-            }
-        }
+[class*='col']:nth-child(2) {
+  .counter-style-2 {
+    &.color-variation {
+      .count-number {
+        background-color: var(--color-secondary-darker);
+        color: var(--color-secondary);
+      }
     }
+  }
 }
 
-[class*=col]:nth-child(3) {
-    .counter-style-2 {
-        &.color-variation { 
-            .count-number {
-                background-color: var(--color-light-green-darker);
-                color: var(--color-light-green);
-            }
-        }
+[class*='col']:nth-child(3) {
+  .counter-style-2 {
+    &.color-variation {
+      .count-number {
+        background-color: var(--color-light-green-darker);
+        color: var(--color-light-green);
+      }
     }
+  }
 }
-
 
 /*------------------------------
     Counterup Style Four  
 -------------------------------*/
 .counter-style-4 {
-    text-align: left;
-    margin-top: 30px;
-    .counter-title {
-        margin-top: 8px;
-        font-weight: 400;
-        font-size: 24px;
+  text-align: left;
+  margin-top: 30px;
+  .counter-title {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .count-number {
+    font-size: 35px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--color-primary);
+    display: inline-block;
+    position: relative;
+    &::after {
+      content: '+';
     }
-    .count-number {
-        font-size: 35px;
-        line-height: 1.2;
-        font-weight: 700;
-        color: var(--color-primary);
-        display: inline-block;
-        position: relative;
-        &::after {
-            content: "+";
-        }
-        span {
-            display: inline-block;
-        }
+    span {
+      display: inline-block;
     }
+  }
 }
 
+.counter-style-5 {
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid #050810;
+  box-shadow: 1px 1px 15px 1px #9eff00;
+  border-radius: 18px;
+  width: 280.75px;
+  height: 152.92px;
+  margin-top: 80px;
+  .counter-title {
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+  }
+  .count-number {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+    color: #a1fe04;
+    display: inline-block;
+    position: relative;
+    margin-top: 46px;
+    &::after {
+      content: '';
+    }
+    span {
+      display: inline-block;
+    }
+  }
+}
 
-
+.counter-style-6 {
+  width: 100%;
+  min-height: 248.52px;
+  border-radius: 18px;
+  border: 8px solid;
+  border-image-source: url('~@/assets/images/counter/border.png');
+  border-image-slice: 8;
+  padding: 57.4px 98.75px 49.32px 49.96px;
+  .counter-title {
+    font-weight: 900;
+    font-size: 25px;
+    color: white;
+  }
+  .count-content {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+}
