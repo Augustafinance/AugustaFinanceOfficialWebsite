@@ -36,7 +36,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="rn-footer-widget">
+                            <!-- <div class="rn-footer-widget">
                                 <h4 class="title">Newsletter</h4>
                                 <div class="inner">
                                     <h6 class="subtitle">2000+ Our clients are subscribe Around the World</h6>
@@ -49,7 +49,7 @@
                                         </div>
                                     </form>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

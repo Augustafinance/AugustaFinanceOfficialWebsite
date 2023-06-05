@@ -45,24 +45,49 @@
                             <div class="counter-title">
                                 Yield Boosting Capabilities
                             </div>
+                            <img src="../../assets/images/counter/bottom-border.png" style="width: 100%;"/>
                             <div class="counter-content">
                                 Boost your VELO and veVELO returns with Augusta's yield-optimization features, designed to maximize your earning potential.
+                                <img src="../../assets/images/logo/logo-title.png" style="width: 24px;height: 24px;"/>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="counter-style-6">
+                            <div class="counter-title">
+                                Unleashing the Power of VELO and veVELO
+                            </div>
+                            <img src="../../assets/images/counter/bottom-border.png" style="width: 100%;"/>
+                            <div class="counter-content">
+                                Augusta unleashes the full potential of VELO and veVELO, empowering users with advanced liquidity solutions and boosted returns.
+                                <img src="../../assets/images/logo/logo-title.png" style="width: 24px;height: 24px;"/>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row" style="margin-top: 52.8px">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="counter-style-6">
+                            <div class="counter-title">
+                                Dedicated Liquidity Provision for VELO and veVELO
+                            </div>
+                            <img src="../../assets/images/counter/bottom-border.png" style="width: 100%;"/>
+                            <div class="counter-content">
+                                Augusta is the go-to platform for VELO and veVELO liquidity solutions, connecting traders and investors in the Optimism ecosystem.
+                                <img src="../../assets/images/logo/logo-title.png" style="width: 24px;height: 24px;"/>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="counter-style-6">
-                            
+                            <div class="counter-title">
+                                Optimized VELO and veVELO Governance
+                            </div>
+                            <img src="../../assets/images/counter/bottom-border.png" style="width: 100%;"/>
+                            <div class="counter-content">
+                                Augusta amplifies the governance power of VELO and veVELO holders, ensuring their voices are heard in the decision-making process.
+                                <img src="../../assets/images/logo/logo-title.png" style="width: 24px;height: 24px;"/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,8 +110,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <ServiceOne
-                        service-style="service__style--1 bg-color-blackest radius mt--25 rbt-border"
+                    <ServiceSix
+                        service-style="service__style--1 bg-color-blackest radius mt--25 service-six-border"
                         icon-size="62"
                         text-align="left"
                     />
@@ -110,11 +135,48 @@
                     </div>
                 </div>
                 <div class="row">
-                    <ServiceOne
-                        service-style="service__style--1 bg-color-blackest radius mt--25 rbt-border"
-                        icon-size="62"
-                        text-align="left"
-                    />
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="counter-style-7">
+                            <div>
+                                <span class="counter-title">Step1</span>
+                            </div>
+                            <div class="counter-content">
+                                Deposit any amount of VELO or veVELO into Augusta
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="counter-style-7">
+                            <div>
+                                <span class="counter-title">Step2</span>
+                            </div>
+                            <div class="counter-content">
+                                Receive augVELO tokens in exchange for providing VELO
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 52.8px">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="counter-style-7">
+                            <div>
+                                <span class="counter-title">Step3</span>
+                            </div>
+                            <div class="counter-content">
+                                Receive a share of the total veVELO rewards for staking augVELO
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="counter-style-7">
+                            <div>
+                                <span class="counter-title">Step4</span>
+                            </div>
+                            <div class="counter-content">
+                                Receive reward boost with AUG tokens.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,11 +197,19 @@
                     </div>
                 </div>
                 <div class="row">
-                    <ServiceOne
-                        service-style="service__style--1 bg-color-blackest radius mt--25 rbt-border"
-                        icon-size="62"
-                        text-align="left"
-                    />
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                        <div class="counter-style-8">
+                            <div class="counter-title">
+                                Our Discord and Twitter are the best places to stay up to date on all of Augusta’s latest developments.
+                            </div>
+                            <div class="counter-content" style="color: #00A3FF;">
+                                <img class="counter-content-icon" src="../../assets/images/icons/twitter.svg" alt="Twitter">Follow on Twitter
+                            </div>
+                            <div class="counter-content" style="color: #767DF0;">
+                                <img class="counter-content-icon" src="../../assets/images/icons/discord.svg" alt="Discord">Follow on Discord
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,11 +229,12 @@
     import BlogPostMixin from '../../mixins/BlogPostMixin'
     import BlogPost from '../../components/blog/BlogPost'
     import ServiceOne from '../../components/elements/service/ServiceOne'
+    import ServiceSix from '../../components/elements/service/ServiceSix'
     import Counter from "../../components/elements/counterUp/Counter"
 
     export default {
         name: 'Business',
-        components: {BlogPost, Pricing, Accordion, Timeline, Tab, SectionTitle, Separator, Icon, Layout, ServiceOne, Counter},
+        components: {BlogPost, Pricing, Accordion, Timeline, Tab, SectionTitle, Separator, Icon, Layout, ServiceOne, Counter, ServiceSix},
         mixins: [BlogPostMixin],
         data() {
             return {

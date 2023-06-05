@@ -150,19 +150,69 @@
 
 .counter-style-6 {
   width: 100%;
-  min-height: 248.52px;
+  height: 248.52px;
   border-radius: 18px;
   border: 8px solid;
   border-image-source: url('~@/assets/images/counter/border.png');
   border-image-slice: 8;
-  padding: 57.4px 98.75px 49.32px 49.96px;
+  padding: 40px 50px;
   .counter-title {
     font-weight: 900;
     font-size: 25px;
     color: white;
   }
-  .count-content {
+  .counter-content {
     font-size: 20px;
     line-height: 1.45;
+  }
+}
+
+.counter-style-7 {
+  width: 100%;
+  // height: 132.78px;
+  border-radius: 18px;
+  border: 8px solid;
+  border-image-source: url('~@/assets/images/counter/border.png');
+  border-image-slice: 8;
+  padding: 26px 22px;
+  .counter-title {
+    font-weight: 900;
+    font-size: 40px;
+    background: linear-gradient(to right, #a1fe04, #00a3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  .counter-content {
+    font-size: 20px;
+    color: white;
+  }
+}
+
+.counter-style-8 {
+  width: 100%;
+  // height: 132.78px;
+  border-radius: 18px;
+  border: 8px solid;
+  border-image-source: url('~@/assets/images/counter/border.png');
+  border-image-slice: 8;
+  padding: 36px;
+  .counter-title {
+    font-size: 20px;
+    line-height: 145.5%;
+    max-width: 523.59px;
+    font-weight: 500;
+    color: white;
+  }
+  .counter-content {
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+    .counter-content-icon{
+      width: 46px;
+      height: 46px;
+      margin-right: 17px;
+    }
   }
 }
