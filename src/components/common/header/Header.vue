@@ -86,14 +86,14 @@
                                 <!-- End Header Btn  -->
 
                                 <!-- Start Mobile-Menu-Bar -->
-                                <div class="mobile-menu-bar ml--5 d-block d-lg-none">
+                                <!-- <div class="mobile-menu-bar ml--5 d-block d-lg-none">
                                     <div class="hamberger">
                                         <button class="hamberger-button"
                                                 @click.prevent="AppFunctions.toggleClass('.popup-mobile-menu', 'active')">
                                             <Icon name="menu" size="21"/>
                                         </button>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- Start Mobile-Menu-Bar -->
 
                                 <div v-if="data.showThemeSwitcherButton" id="my_switcher" class="my_switcher">
@@ -135,14 +135,14 @@
                                 <!-- End Header Btn  -->
 
                                 <!-- Start Mobile-Menu-Bar -->
-                                <div class="mobile-menu-bar ml--5 d-block d-lg-none">
+                                <!-- <div class="mobile-menu-bar ml--5 d-block d-lg-none">
                                     <div class="hamberger">
                                         <button class="hamberger-button"
                                                 @click.prevent="AppFunctions.toggleClass('.popup-mobile-menu', 'active')">
                                             <Icon name="menu" size="21"/>
                                         </button>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- Start Mobile-Menu-Bar -->
 
                                 <div v-if="data.showThemeSwitcherButton" id="my_switcher" class="my_switcher">

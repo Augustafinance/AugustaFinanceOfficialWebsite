@@ -1,9 +1,9 @@
 <template>
     <div v-if="sectionTitleStyle === 1" class="section-title" :class="checkTextAlign">
-        <h4 class="subtitle" v-if="subtitle">
-            <span class="theme-gradient" v-html="subtitle"/>
+        <h4 class="subtitle" v-if="subtitle" style="margin-left: 65px">
+            <span class="" v-html="subtitle"/>
         </h4>
-        <div style="display: flex;align-items: center;" class="title">
+        <div style="display: flex;align-items: flex-start;" class="title">
             <img src="../../../assets/images/logo/logo-title.png" style="margin-right: 24px;"/>
             <div class="w-600" v-html="title" style="font-size: 32px;line-height: 1.455;flex: 1;" />
         </div>

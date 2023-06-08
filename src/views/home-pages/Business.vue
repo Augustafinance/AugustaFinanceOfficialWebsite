@@ -1,5 +1,5 @@
 <template>
-    <Layout header-class="header-left-align" nav-alignment="left" :footer-style="3" buy-button-class="btn-default btn-small" :show-top-header="false" :show-copyright="false">
+    <Layout header-class="header-left-align" nav-alignment="left" :footer-style="3" buy-button-class="btn-default btn-small" :show-top-header="false" :show-copyright="false" :show-theme-switcher-button="false">
         <!-- Start Slider Area -->
         <div class="slider-area slider-style-3 height-850">
             <div class="container">
@@ -8,7 +8,7 @@
                         <div class="inner text-left">
                             <h1 class="title theme-gradient" data-aos="fade-up" data-aos-delay="100">The Liquidity Hub of the <br/>Optimism Ecosystem
                             </h1>
-                            <p class="description" data-aos="fade-up" data-aos-delay="130">
+                            <p class="description" data-aos="fade-up" data-aos-delay="130" style="color: white">
                                 By guiding the yield potential and governance power of VELO and veVELO  holders, Augusta creates unprecedented value within the Optimism ecosystem.
                             </p>
                             <Counter
@@ -40,8 +40,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="counter-style-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom: 52.8px">
+                        <div class="counter-style-6" data-aos="fade-up" data-aos-delay="130">
                             <div class="counter-title">
                                 Yield Boosting Capabilities
                             </div>
@@ -52,8 +52,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="counter-style-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom: 52.8px">
+                        <div class="counter-style-6" data-aos="fade-up" data-aos-delay="130">
                             <div class="counter-title">
                                 Unleashing the Power of VELO and veVELO
                             </div>
@@ -65,9 +65,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" style="margin-top: 52.8px">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="counter-style-6">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom: 52.8px">
+                        <div class="counter-style-6" data-aos="fade-up" data-aos-delay="130" style="padding-top: 10px">
                             <div class="counter-title">
                                 Dedicated Liquidity Provision for VELO and veVELO
                             </div>
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="counter-style-6">
+                        <div class="counter-style-6" data-aos="fade-up" data-aos-delay="130">
                             <div class="counter-title">
                                 Optimized VELO and veVELO Governance
                             </div>
@@ -111,7 +111,7 @@
                 </div>
                 <div class="row">
                     <ServiceSix
-                        service-style="service__style--1 bg-color-blackest radius mt--25 service-six-border"
+                        service-style="service__style--1 radius mt--25 service-six-border"
                         icon-size="62"
                         text-align="left"
                     />
@@ -135,8 +135,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="counter-style-7">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom: 52.8px">
+                        <div class="counter-style-7" data-aos="fade-up" data-aos-delay="130">
                             <div>
                                 <span class="counter-title">Step1</span>
                             </div>
@@ -145,8 +145,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="counter-style-7">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom: 52.8px">
+                        <div class="counter-style-7" data-aos="fade-up" data-aos-delay="130">
                             <div>
                                 <span class="counter-title">Step2</span>
                             </div>
@@ -156,9 +156,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" style="margin-top: 52.8px">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="counter-style-7">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom: 52.8px">
+                        <div class="counter-style-7" data-aos="fade-up" data-aos-delay="130">
                             <div>
                                 <span class="counter-title">Step3</span>
                             </div>
@@ -168,7 +168,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="counter-style-7">
+                        <div class="counter-style-7" data-aos="fade-up" data-aos-delay="130">
                             <div>
                                 <span class="counter-title">Step4</span>
                             </div>
@@ -198,7 +198,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-12 col-12">
-                        <div class="counter-style-8">
+                        <div class="counter-style-8" data-aos="fade-up" data-aos-delay="130">
                             <div class="counter-title">
                                 Our Discord and Twitter are the best places to stay up to date on all of Augusta’s latest developments.
                             </div>

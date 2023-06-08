@@ -467,6 +467,9 @@
         padding: 100px 0;
     }
 
+    background: url('~@/assets/images/bg/top-bg.png') right bottom no-repeat;
+    background-size: auto;
+
     .inner {
         .title {
             font-family: var(--font-primary);
