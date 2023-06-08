@@ -16,8 +16,8 @@
                                     <h4 class="title">Community</h4>
                                     <div class="inner">
                                         <ul class="footer-link link-hover">
-                                            <li><router-link to="/testimonial">Twitter</router-link></li>
-                                            <li><router-link to="/company">Discord</router-link></li>
+                                            <li><router-link to="/">Twitter</router-link></li>
+                                            <li><router-link to="/">Discord</router-link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -29,7 +29,7 @@
                                     <h4 class="title">Resources</h4>
                                     <div class="inner">
                                         <ul class="footer-link link-hover">
-                                            <li><router-link to="/corporate">Doc</router-link></li>
+                                            <li><router-link to="/">Doc</router-link></li>
                                         </ul>
                                     </div>
                                 </div>
