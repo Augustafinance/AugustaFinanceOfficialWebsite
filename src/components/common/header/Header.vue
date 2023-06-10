@@ -78,7 +78,7 @@
 
                                 <!-- Start Header Btn -->
                                 <div class="header-btn">
-                                    <a :class="data.buyButtonClass"
+                                    <a :class="data.buyButtonClass" style="width: 189px;height: 52px;font-size: 20px;line-height: 25px;font-weight: 700;display: flex;align-items: center;justify-content: center;"
                                        href="#">
                                         Launch App
                                     </a>
@@ -127,7 +127,7 @@
                             <div class="header-right">
                                 <!-- Start Header Btn -->
                                 <div class="header-btn">
-                                    <a :class="data.buyButtonClass"
+                                    <a :class="data.buyButtonClass" style="width: 189px;height: 52px;font-size: 20px;line-height: 25px;font-weight: 700;display: flex;align-items: center;justify-content: center;"
                                        href="#">
                                        Launch App
                                     </a>

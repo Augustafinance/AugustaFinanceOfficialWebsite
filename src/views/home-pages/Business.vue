@@ -48,7 +48,7 @@
                             <img src="../../assets/images/counter/bottom-border.png" style="width: 100%;"/>
                             <div class="counter-content">
                                 Boost your VELO and veVELO returns with Augusta's yield-optimization features, designed to maximize your earning potential.
-                                <img src="../../assets/images/logo/logo-title.png" style="width: 24px;height: 24px;"/>
+                                <img src="../../assets/images/logo/logo-title.svg" style="width: 24px;height: 24px;"/>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                             <img src="../../assets/images/counter/bottom-border.png" style="width: 100%;"/>
                             <div class="counter-content">
                                 Augusta unleashes the full potential of VELO and veVELO, empowering users with advanced liquidity solutions and boosted returns.
-                                <img src="../../assets/images/logo/logo-title.png" style="width: 24px;height: 24px;"/>
+                                <img src="../../assets/images/logo/logo-title.svg" style="width: 24px;height: 24px;"/>
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                             <img src="../../assets/images/counter/bottom-border.png" style="width: 100%;"/>
                             <div class="counter-content">
                                 Augusta is the go-to platform for VELO and veVELO liquidity solutions, connecting traders and investors in the Optimism ecosystem.
-                                <img src="../../assets/images/logo/logo-title.png" style="width: 24px;height: 24px;"/>
+                                <img src="../../assets/images/logo/logo-title.svg" style="width: 24px;height: 24px;"/>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                             <img src="../../assets/images/counter/bottom-border.png" style="width: 100%;"/>
                             <div class="counter-content">
                                 Augusta amplifies the governance power of VELO and veVELO holders, ensuring their voices are heard in the decision-making process.
-                                <img src="../../assets/images/logo/logo-title.png" style="width: 24px;height: 24px;"/>
+                                <img src="../../assets/images/logo/logo-title.svg" style="width: 24px;height: 24px;"/>
                             </div>
                         </div>
                     </div>
@@ -205,7 +205,7 @@
                             <div class="counter-content" style="color: #00A3FF;">
                                 <img class="counter-content-icon" src="../../assets/images/icons/twitter.svg" alt="Twitter">Follow on Twitter
                             </div>
-                            <div class="counter-content" style="color: #767DF0;">
+                            <div class="counter-content" style="color: #767DF0;margin-top: 12px;">
                                 <img class="counter-content-icon" src="../../assets/images/icons/discord.svg" alt="Discord">Follow on Discord
                             </div>
                         </div>
@@ -228,13 +228,12 @@
     import Pricing from '../../components/elements/pricing/Pricing'
     import BlogPostMixin from '../../mixins/BlogPostMixin'
     import BlogPost from '../../components/blog/BlogPost'
-    import ServiceOne from '../../components/elements/service/ServiceOne'
     import ServiceSix from '../../components/elements/service/ServiceSix'
     import Counter from "../../components/elements/counterUp/Counter"
 
     export default {
         name: 'Business',
-        components: {BlogPost, Pricing, Accordion, Timeline, Tab, SectionTitle, Separator, Icon, Layout, ServiceOne, Counter, ServiceSix},
+        components: {BlogPost, Pricing, Accordion, Timeline, Tab, SectionTitle, Separator, Icon, Layout, Counter, ServiceSix},
         mixins: [BlogPostMixin],
         data() {
             return {

@@ -14,7 +14,7 @@
                     <h4 class="title w-600">
                         {{ service.title }}
                     </h4>
-                    <p class="description b1 color-gray mb--0" v-html="service.description"/>
+                    <p class="description b1 color-gray mb--0" v-html="service.description" style="font-size: 20px;line-height: 1.49;font-weight: 400;min-height: 150px;"/>
                 </div>
             </div>
         </div>
@@ -44,17 +44,17 @@
             return {
                 serviceList: [
                     {
-                        icon: require(`@/assets/images/service/service-six-one.png`),
+                        icon: require(`@/assets/images/service/service-six-one.svg`),
                         title: 'Empowering Governance with AUG',
                         description: 'Augusta\'s governance token, AUG, is the centerpiece of its decentralized decision-making process, giving holders a direct voice in the protocol\'s future.'
                     },
                     {
-                        icon: require(`@/assets/images/service/service-six-two.png`),
+                        icon: require(`@/assets/images/service/service-six-two.svg`),
                         title: 'Vote-locking Mechanism with vlAUG',
                         description: 'Lock your AUG tokens to receive vlAUG, the vote-locked token, which provides you with voting power to influence the direction of the Augusta protocol'
                     },
                     {
-                        icon: require(`@/assets/images/service/service-six-three.png`),
+                        icon: require(`@/assets/images/service/service-six-three.svg`),
                         title: 'Governance Power with vlAUG',
                         description: '\"By holding vlAUG, you have a hand in shaping Augusta\'s future, steering its development, and affecting changes to the system\'s parameters.\"'
                     },

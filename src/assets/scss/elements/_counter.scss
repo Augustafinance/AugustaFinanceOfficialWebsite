@@ -124,6 +124,10 @@
   width: 280.75px;
   height: 152.92px;
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   &:hover {
     border: 1px solid #050810;
     box-shadow: 1px 1px 15px 1px #9eff00;
@@ -132,11 +136,12 @@
     margin-top: 32px;
     font-weight: 400;
     font-size: 24px;
-    line-height: 1;
+    line-height: 16px;
+    margin-bottom: 36px;
   }
   .count-number {
     font-size: 36px;
-    line-height: 1;
+    line-height: 24px;
     font-weight: 700;
     color: #a1fe04;
     display: inline-block;
@@ -202,8 +207,8 @@
   border-image-source: url('~@/assets/images/counter/border.png');
   border-image-slice: 8;
   padding: 36px;
-  background: url('~@/assets/images/logo/logo-div.png') right top no-repeat;
-  background-size: contain;
+  background: url('~@/assets/images/logo/logo-div.png') right 40px center no-repeat;
+  background-size: auto;
   .counter-title {
     font-size: 20px;
     line-height: 145.5%;

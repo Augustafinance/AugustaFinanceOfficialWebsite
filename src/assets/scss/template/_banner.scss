@@ -473,9 +473,9 @@
     .inner {
         .title {
             font-family: var(--font-primary);
-            margin-bottom: 25px;
+            margin-bottom: 130px;
             display: block;
-            font-size: 110px;
+            font-size: 90px;
             line-height: 1.09;
 
             @media #{$lg-layout} {
@@ -493,8 +493,9 @@
         }
 
         .description {
-            font-size: 32px;
-            line-height: 48px;
+            font-size: 25px;
+            line-height: 1.5;
+            max-width: 854.64px;
 
             @media #{$md-layout} {
                 font-size: 20px;
