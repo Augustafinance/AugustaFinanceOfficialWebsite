@@ -20,6 +20,11 @@
         margin-bottom: 20px;
         color: white;
         @extend %transition;
+        font-size: 32px;
+        line-height: 1.455;
+        @media #{$sm-layout} {
+            font-size: 25px;
+        }
     }
     .description {
         br {

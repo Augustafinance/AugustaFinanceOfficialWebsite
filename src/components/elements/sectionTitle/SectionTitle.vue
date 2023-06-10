@@ -5,7 +5,7 @@
         </h4>
         <div style="display: flex;align-items: flex-start;" class="title">
             <img src="../../../assets/images/logo/logo-title.svg" style="margin-right: 24px;"/>
-            <div class="w-600" v-html="title" style="font-size: 32px;line-height: 1.455;flex: 1;" />
+            <div class="w-600" v-html="title" style="flex: 1;" />
         </div>
         <p v-if="description" class="description b1" v-html="description"/>
     </div>
