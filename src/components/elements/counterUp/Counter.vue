@@ -111,7 +111,9 @@
                             :suffix="counter.suffix || ''"
                             :prefix="counter.prefix || ''"
                             :decimals="counter.decimals || 0"
+                            v-if="counter.number"
                         />
+                        <div v-else>——</div>
                     </div>
                 </VisibilitySensor>
                 <h5 class="counter-title">{{ counter.title }}</h5>

@@ -6,7 +6,7 @@
                 <div class="row row--30 align-items-center">
                     <div class="order-2 order-lg-1 col-lg-12">
                         <div class="inner text-left">
-                            <h1 class="title theme-gradient" data-aos="fade-up" data-aos-delay="100">The Liquidity Hub of the <br/>Optimism Ecosystem
+                            <h1 class="title theme-gradient" data-aos="fade-up" data-aos-delay="100">Supercharger For DeFi In<br />OP Stack
                             </h1>
                             <p class="description" data-aos="fade-up" data-aos-delay="130" style="color: white">
                                 By guiding the yield potential and governance power of VELO and veVELO  holders, Augusta creates unprecedented value within the Optimism ecosystem.
@@ -203,10 +203,14 @@
                                 Our Discord and Twitter are the best places to stay up to date on all of Augusta’s latest developments.
                             </div>
                             <div class="counter-content" style="color: #00A3FF;">
-                                <img class="counter-content-icon" src="../../assets/images/icons/twitter.svg" alt="Twitter">Follow on Twitter
+                                <a href="https://twitter.com/home" style="color: #00A3FF;">
+                                    <img class="counter-content-icon" src="../../assets/images/icons/twitter.svg" alt="Twitter">Follow on Twitter
+                                </a>
                             </div>
                             <div class="counter-content" style="color: #767DF0;margin-top: 12px;">
-                                <img class="counter-content-icon" src="../../assets/images/icons/discord.svg" alt="Discord">Follow on Discord
+                                <a href="https://discord.gg/Pk6n6RSy" style="color: #767DF0;">
+                                    <img class="counter-content-icon" src="../../assets/images/icons/discord.svg" alt="Discord">Follow on Discord
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -239,17 +243,17 @@
             return {
                 counterFiveData: [
                     {
-                        number: 16233743,
+                        number: 0,
                         title: 'VELO locked',
                     },
                     {
-                        number: 30.81,
+                        number: 0,
                         title: 'APY',
                         suffix: '%',
                         decimals: 2
                     },
                     {
-                        number: 311.21,
+                        number: 0,
                         title: 'Total Value locked',
                         suffix: 'm',
                         prefix: '$',
