@@ -16,7 +16,7 @@
                                     <h4 class="title">Community</h4>
                                     <div class="inner">
                                         <ul class="footer-link link-hover">
-                                            <li><a href="https://twitter.com/home">Twitter</a></li>
+                                            <li><a href="https://twitter.com/Augusta_finance">Twitter</a></li>
                                             <li><a href="https://discord.gg/Pk6n6RSy">Discord</a></li>
                                         </ul>
                                     </div>

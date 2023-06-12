@@ -203,7 +203,7 @@
                                 Our Discord and Twitter are the best places to stay up to date on all of Augusta’s latest developments.
                             </div>
                             <div class="counter-content" style="color: #00A3FF;">
-                                <a href="https://twitter.com/home" style="color: #00A3FF;">
+                                <a href="https://twitter.com/Augusta_finance" style="color: #00A3FF;">
                                     <img class="counter-content-icon" src="../../assets/images/icons/twitter.svg" alt="Twitter">Follow on Twitter
                                 </a>
                             </div>
