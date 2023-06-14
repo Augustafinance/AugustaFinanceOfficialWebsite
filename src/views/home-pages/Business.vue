@@ -103,7 +103,7 @@
                         <SectionTitle
                             text-align="left"
                             subtitle="Augusta Governance"
-                            title="Augusta leverages AUG and vlAUG tokens for user-driven governance,<br />fostering liquidity and boosting yields for VELO and veVELO"
+                            title="Augusta leverages AUGU and vlAUGU tokens for user-driven governance,<br />fostering liquidity and boosting yields for VELO and veVELO"
                             description=""
                             data-aos="fade-up"
                         />
@@ -151,7 +151,7 @@
                                 <span class="counter-title">Step2</span>
                             </div>
                             <div class="counter-content">
-                                Receive augVELO tokens in exchange for providing VELO
+                                Receive auguVELO tokens in exchange for providing VELO
                             </div>
                         </div>
                     </div>
@@ -163,7 +163,7 @@
                                 <span class="counter-title">Step3</span>
                             </div>
                             <div class="counter-content">
-                                Receive a share of the total veVELO rewards for staking augVELO
+                                Receive a share of the total veVELO rewards for staking auguVELO
                             </div>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                                 <span class="counter-title">Step4</span>
                             </div>
                             <div class="counter-content">
-                                Receive reward boost with AUG tokens.
+                                Receive reward boost with AUGU tokens.
                             </div>
                         </div>
                     </div>

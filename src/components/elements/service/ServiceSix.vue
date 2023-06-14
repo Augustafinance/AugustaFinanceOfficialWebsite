@@ -45,18 +45,18 @@
                 serviceList: [
                     {
                         icon: require(`@/assets/images/service/service-six-one.svg`),
-                        title: 'Empowering Governance with AUG',
-                        description: 'Augusta\'s governance token, AUG, is the centerpiece of its decentralized decision-making process, giving holders a direct voice in the protocol\'s future.'
+                        title: 'Empowering Governance with AUGU',
+                        description: 'Augusta\'s governance token, AUGU, is the centerpiece of its decentralized decision-making process, giving holders a direct voice in the protocol\'s future.'
                     },
                     {
                         icon: require(`@/assets/images/service/service-six-two.svg`),
-                        title: 'Vote-locking Mechanism with vlAUG',
-                        description: 'Lock your AUG tokens to receive vlAUG, the vote-locked token, which provides you with voting power to influence the direction of the Augusta protocol'
+                        title: 'Vote-locking Mechanism with vlAUGU',
+                        description: 'Lock your AUG tokens to receive vlAUGU, the vote-locked token, which provides you with voting power to influence the direction of the Augusta protocol'
                     },
                     {
                         icon: require(`@/assets/images/service/service-six-three.svg`),
-                        title: 'Governance Power with vlAUG',
-                        description: '\"By holding vlAUG, you have a hand in shaping Augusta\'s future, steering its development, and affecting changes to the system\'s parameters.\"'
+                        title: 'Governance Power with vlAUGU',
+                        description: '\"By holding vlAUGU, you have a hand in shaping Augusta\'s future, steering its development, and affecting changes to the system\'s parameters.\"'
                     },
                 ]
             }
