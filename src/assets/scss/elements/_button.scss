@@ -54,7 +54,9 @@ button {
       filter: brightness(125%);
       color: var(--color-white);
       text-decoration: none;
-      background: linear-gradient(270deg, #A1FE04 0%, #00A3FF 101.24%);
+      // background: linear-gradient(270deg, #A1FE04 0%, #00A3FF 101.24%);
+      background: url('~@/assets/images/bg/buttonBg.gif') no-repeat;
+      background-size: 100% 100%;
       color: black;
       border-color: transparent;
     }
