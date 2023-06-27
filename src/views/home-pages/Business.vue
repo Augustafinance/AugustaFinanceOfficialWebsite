@@ -121,7 +121,14 @@
                         icon-size="62"
                         text-align="left"
                     /> -->
-                    <div class="card-x"></div>
+                    <div class="card-x" ref="cardX">
+                        <div class="card-x-content">
+                            <div class="card-item" style="margin-right: 92px;background: red;"></div>
+                            <div class="card-item" style="margin-right: 92px;background: green;"></div>
+                            <div class="card-item" style="margin-right: 92px;background: blue;"></div>
+                            <div class="card-item" style="background: yellow;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -293,6 +300,23 @@
                     }
                 ]
             }
+        },
+        mounted() {
+            window.addEventListener('scroll', this.onScroll)
+        },
+        beforeUnmount() {
+            window.removeEventListener('scroll')
+        },
+        methods: {
+            onScroll() {
+                const { scrollTop } = document.documentElement
+                const containerTop = this.$refs.cardX.offsetTop
+                const containerHeightNumber = this.$refs.cardX.offsetHeight
+                console.log(scrollTop)
+                console.log(containerTop)
+                console.log(containerHeightNumber)
+                const newProgress = ((scrollTop - containerTop) * 100) / (containerHeightNumber - innerHeight)
+            }
         }
     }
 </script>
@@ -300,7 +324,17 @@
 <style scoped lang="scss">
 .card-x{
     width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    height: calc(92px * 3 + 432px * 4);
+    position: relative;
+    overflow: hidden;
+    .card-x-content{
+        width: 100%;
+        display: flex;
+        height: 428px;
+        .card-item {
+            min-width: 432px;
+            height: 428px;
+        }
+    }
 }
 </style>
