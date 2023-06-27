@@ -120,6 +120,31 @@
             </div>
         </div>
     </div>
+
+    <div v-else-if="counterStyle === 7" class="row">
+        <div :class="`${column}`"
+             v-for="(counter, index) in counterData"
+             :key="index">
+            <div :class="`count-box counter-style-9 ${checkTextAlign}`">
+                <h5 class="counter-title">{{ counter.title }}</h5>
+                <VisibilitySensor @change="onChange">
+                    <div class="count-number">
+                        <img :src="counter.icon" class="count-icon" />
+                        <countTo
+                            :endVal="status ? counter.number : 0"
+                            :autoplay="countUp"
+                            :duration="3000"
+                            :suffix="counter.suffix || ''"
+                            :prefix="counter.prefix || ''"
+                            :decimals="counter.decimals || 0"
+                            v-if="counter.number"
+                        />
+                        <div v-else>——</div>
+                    </div>
+                </VisibilitySensor>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>

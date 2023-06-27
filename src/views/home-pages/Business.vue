@@ -6,15 +6,21 @@
                 <div class="row row--30 align-items-center">
                     <div class="order-2 order-lg-1 col-lg-12">
                         <div class="inner text-left">
-                            <h1 class="title theme-gradient" data-aos="fade-up" data-aos-delay="100">Supercharger For DeFi In<br />OP Stack
+                            <h1 class="title theme-gradient" data-aos="fade-up" data-aos-delay="100">liquidity releasing and<br />governance hub
                             </h1>
-                            <p class="description" data-aos="fade-up" data-aos-delay="130" style="color: white">
-                                By guiding the yield potential and governance power of VELO and veVELO  holders, Augusta creates unprecedented value within the Optimism ecosystem.
+                            <p class="description" data-aos="fade-up" data-aos-delay="130" style="color: white;font-size: 40px">
+                                Earn interest, borrow assets, and earn<br />veVELO APR
                             </p>
                             <Counter
-                                :counter-style="6"
-                                text-align="center"
+                                :counter-style="7"
+                                text-align="text-start"
                                 :counter-data="counterFiveData"
+                                column="col-lg-3 col-md-6 col-sm-6 col-12"
+                            />
+                            <Counter
+                                :counter-style="7"
+                                text-align="text-start"
+                                :counter-data="counterFiveDataTwo"
                                 column="col-lg-3 col-md-6 col-sm-6 col-12"
                             />
                         </div>
@@ -26,14 +32,14 @@
 
         <Separator/>
 
-        <div class="rwt-tab-area rn-section-gap">
+        <!-- <div class="rwt-tab-area rn-section-gap">
             <div class="container">
                 <div class="row mb--40">
                     <div class="col-lg-12">
                         <SectionTitle
                             text-align="left"
                             subtitle=""
-                            title="At Augusta, VELO and veVELO are at the heart of our mission - to<br />provide superior liquidity solutions and boosted returns."
+                            title="Features"
                             description=""
                             data-aos="fade-up"
                         />
@@ -94,7 +100,7 @@
             </div>
         </div>
 
-        <Separator/>
+        <Separator/> -->
 
         <div class="rwt-timeline-area rn-section-gap">
             <div class="container">
@@ -102,19 +108,20 @@
                     <div class="col-lg-12">
                         <SectionTitle
                             text-align="left"
-                            subtitle="Augusta Governance"
-                            title="Augusta leverages AUGU and vlAUGU tokens for user-driven governance,<br />fostering liquidity and boosting yields for VELO and veVELO"
+                            subtitle=""
+                            title="Features"
                             description=""
                             data-aos="fade-up"
                         />
                     </div>
                 </div>
                 <div class="row">
-                    <ServiceSix
+                    <!-- <ServiceSix
                         service-style="service__style--1 radius mt--25 service-six-border"
                         icon-size="62"
                         text-align="left"
-                    />
+                    /> -->
+                    <div class="card-x"></div>
                 </div>
             </div>
         </div>
@@ -181,9 +188,9 @@
             </div>
         </div>
 
-        <Separator/>
+        <!-- <Separator/> -->
 
-        <div class="rwt-timeline-area rn-section-gap">
+        <!-- <div class="rwt-timeline-area rn-section-gap">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -216,7 +223,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </Layout>
 </template>
@@ -244,23 +251,56 @@
                 counterFiveData: [
                     {
                         number: 0,
-                        title: 'VELO locked',
+                        title: 'Total Deposite',
+                        icon: require('../../assets/images/counter/icon-one.png')
                     },
                     {
                         number: 0,
-                        title: 'APY',
+                        title: 'Total Borrow osite',
                         suffix: '%',
-                        decimals: 2
+                        decimals: 2,
+                        icon: require('../../assets/images/counter/icon-one.png')
                     },
                     {
                         number: 0,
-                        title: 'Total Value locked',
+                        title: 'veTokens Value',
                         suffix: 'm',
                         prefix: '$',
-                        decimals: 2
+                        decimals: 2,
+                        icon: require('../../assets/images/counter/icon-two.png')
+                    }
+                ],
+                counterFiveDataTwo: [
+                    {
+                        number: 0,
+                        title: 'Deposite APR',
+                        icon: require('../../assets/images/counter/icon-three.png')
+                    },
+                    {
+                        number: 0,
+                        title: 'Borror APR',
+                        suffix: '%',
+                        decimals: 2,
+                        icon: require('../../assets/images/counter/icon-three.png')
+                    },
+                    {
+                        number: 0,
+                        title: 'Rewards',
+                        suffix: 'm',
+                        prefix: '$',
+                        decimals: 2,
+                        icon: require('../../assets/images/counter/icon-two.png')
                     }
                 ]
             }
         }
     }
 </script>
+
+<style scoped lang="scss">
+.card-x{
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+</style>
