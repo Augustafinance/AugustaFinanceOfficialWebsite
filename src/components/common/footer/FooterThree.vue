@@ -17,7 +17,7 @@
                                     <div class="inner">
                                         <ul class="footer-link link-hover">
                                             <li><a href="https://twitter.com/Augusta_finance">Twitter</a></li>
-                                            <li><a href="https://discord.gg/Pk6n6RSy">Discord</a></li>
+                                            <li><a href="https://discord.gg/augustafi">Discord</a></li>
                                         </ul>
                                     </div>
                                 </div>

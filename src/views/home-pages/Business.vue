@@ -137,32 +137,34 @@
                             position:
                                 progress <= maxProgress ? (progress >= 0 ? 'fixed' : 'static') : 'absolute',
                             bottom: 0,
-                            left: `calc(50vw - ${containerHeight / 2}px)`
+                            left: `calc(50vw - ${containerHeight / 2}px)`,
+                            transitionDuration: '0.5s',
+                            transitionTimingFunction: 'linear'
                         }">
                             <div class="card-item" style="margin-right: 92px;">
                                 <div class="image-content">
-                                    <img src="../../assets/images/service/supply.png" />
+                                    <img src="../../assets/images/service/supply.svg" />
                                 </div>
                                 <div class="title">SUPPLY</div>
                                 <div class="desc">Supply your ETH to earn AUGU and APR</div>
                             </div>
                             <div class="card-item" style="margin-right: 92px;">
                                 <div class="image-content">
-                                    <img src="../../assets/images/service/borrow.png" />
+                                    <img src="../../assets/images/service/borrow.svg" />
                                 </div>
                                 <div class="title">BORROW</div>
                                 <div class="desc">Deposit veVELO to borrow ETH and earn veVELO APR</div>
                             </div>
                             <div class="card-item" style="margin-right: 92px;">
                                 <div class="image-content">
-                                    <img src="../../assets/images/service/stake.png" />
+                                    <img src="../../assets/images/service/stake.svg" />
                                 </div>
                                 <div class="title">STAKE</div>
                                 <div class="desc">Deposit your AUGU into the protocol to get vlAUGU and earn rewards</div>
                             </div>
                             <div class="card-item">
                                 <div class="image-content">
-                                    <img src="../../assets/images/service/vote.png" />
+                                    <img src="../../assets/images/service/vote.svg" />
                                 </div>
                                 <div class="title">VOTE</div>
                                 <div class="desc">Participate in Augusta governance voting with vlAUGU to share veNFT APR</div>
@@ -345,14 +347,14 @@
                     {
                         number: 0,
                         title: 'Total Deposite',
-                        icon: require('../../assets/images/counter/icon-one.png')
+                        icon: require('../../assets/images/counter/icon-one.svg')
                     },
                     {
                         number: 0,
                         title: 'Total Borrow osite',
                         suffix: '%',
                         decimals: 2,
-                        icon: require('../../assets/images/counter/icon-one.png')
+                        icon: require('../../assets/images/counter/icon-one.svg')
                     },
                     {
                         number: 0,
@@ -360,21 +362,21 @@
                         suffix: 'm',
                         prefix: '$',
                         decimals: 2,
-                        icon: require('../../assets/images/counter/icon-two.png')
+                        icon: require('../../assets/images/counter/icon-two.svg')
                     }
                 ],
                 counterFiveDataTwo: [
                     {
                         number: 0,
                         title: 'Deposite APR',
-                        icon: require('../../assets/images/counter/icon-three.png')
+                        icon: require('../../assets/images/counter/icon-three.svg')
                     },
                     {
                         number: 0,
                         title: 'Borror APR',
                         suffix: '%',
                         decimals: 2,
-                        icon: require('../../assets/images/counter/icon-three.png')
+                        icon: require('../../assets/images/counter/icon-three.svg')
                     },
                     {
                         number: 0,
@@ -382,7 +384,7 @@
                         suffix: 'm',
                         prefix: '$',
                         decimals: 2,
-                        icon: require('../../assets/images/counter/icon-two.png')
+                        icon: require('../../assets/images/counter/icon-two.svg')
                     }
                 ],
                 cardXWidth: 0,
