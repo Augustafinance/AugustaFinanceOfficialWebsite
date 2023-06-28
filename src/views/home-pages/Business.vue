@@ -99,7 +99,7 @@
                 </div>
             </div>
         </div>
-        
+
         <Separator/> -->
 
         <div class="rwt-timeline-area rn-section-gap">
@@ -115,7 +115,7 @@
                         />
                     </div>
                 </div>
-                <div class="row" style="margin-top: 67px;">
+                <div class="row" style="margin-top: 47px;">
                     <!-- <ServiceSix
                         service-style="service__style--1 radius mt--25 service-six-border"
                         icon-size="62"
@@ -431,12 +431,18 @@
     .card-x-content{
         display: flex;
         height: 428px;
+        margin-top: 20px;
+        margin-bottom: 10px;
         .card-item {
             min-width: 432px;
             height: 428px;
             border-radius: 19px;
             border: 1px solid #A1FE04;
             background: rgba(5, 8, 16, 0.35);
+            &:hover {
+                border: 1px solid #050810;
+                box-shadow: 1px 1px 15px 1px #9eff00;
+            }
             .image-content{
                 height: 219px;
                 background: #050810;
