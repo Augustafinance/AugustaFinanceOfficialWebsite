@@ -401,7 +401,6 @@
             this.innerWidth = window.innerWidth
             this.wrapperWidth = this.$refs.cardXContent.offsetWidth
             this.maxProgress = (428 + 2004 - this.cardXWidth) / 2004 * 100
-            console.log(this.maxProgress)
             this.onScroll()
             window.addEventListener('scroll', this.onScroll)
         },
@@ -413,11 +412,7 @@
                 const { scrollTop } = document.documentElement
                 const containerTop = this.$refs.cardX.offsetTop + 428 - window.innerHeight
                 const containerHeightNumber = 428 + 2004 - this.cardXWidth
-                console.log(scrollTop)
-                console.log(containerTop)
-                console.log(containerHeightNumber)
                 const newProgress = ((scrollTop - containerTop) * 100) / (containerHeightNumber - window.innerHeight + 428)
-                console.log(newProgress)
                 this.progress = newProgress
             }
         }
