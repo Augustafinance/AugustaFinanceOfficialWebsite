@@ -115,18 +115,58 @@
                         />
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-top: 67px;">
                     <!-- <ServiceSix
                         service-style="service__style--1 radius mt--25 service-six-border"
                         icon-size="62"
                         text-align="left"
                     /> -->
-                    <div class="card-x" ref="cardX">
-                        <div class="card-x-content">
-                            <div class="card-item" style="margin-right: 92px;background: red;"></div>
-                            <div class="card-item" style="margin-right: 92px;background: green;"></div>
-                            <div class="card-item" style="margin-right: 92px;background: blue;"></div>
-                            <div class="card-item" style="background: yellow;"></div>
+                    <div class="card-x" ref="cardX" :style="{
+                        height: `${2004 - this.cardXWidth}px`,
+                    }">
+                        <div class="card-x-content"
+                            ref="cardXContent"
+                            :style="{
+                            width: `${cardXWidth}px`,
+                            transform:
+                                progress >= 0
+                                ? progress > maxProgress
+                                ? `translateX(-${maxProgress}%)`
+                                :`translateX(-${progress}%)`
+                                : 'translateX(0%)',
+                            position:
+                                progress <= maxProgress ? (progress >= 0 ? 'fixed' : 'static') : 'absolute',
+                            bottom: 0,
+                            left: `calc(50vw - ${containerHeight / 2}px)`
+                        }">
+                            <div class="card-item" style="margin-right: 92px;">
+                                <div class="image-content">
+                                    <img src="../../assets/images/service/supply.png" />
+                                </div>
+                                <div class="title">SUPPLY</div>
+                                <div class="desc">Supply your ETH to earn AUGU and APR</div>
+                            </div>
+                            <div class="card-item" style="margin-right: 92px;">
+                                <div class="image-content">
+                                    <img src="../../assets/images/service/borrow.png" />
+                                </div>
+                                <div class="title">BORROW</div>
+                                <div class="desc">Deposit veVELO to borrow ETH and earn veVELO APR</div>
+                            </div>
+                            <div class="card-item" style="margin-right: 92px;">
+                                <div class="image-content">
+                                    <img src="../../assets/images/service/stake.png" />
+                                </div>
+                                <div class="title">STAKE</div>
+                                <div class="desc">Deposit your AUGU into the protocol to get vlAUGU and earn rewards</div>
+                            </div>
+                            <div class="card-item">
+                                <div class="image-content">
+                                    <img src="../../assets/images/service/vote.png" />
+                                </div>
+                                <div class="title">VOTE</div>
+                                <div class="desc">Participate in Augusta governance voting with vlAUGU to share veNFT APR</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,9 +188,14 @@
                         />
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom: 52.8px">
-                        <div class="counter-style-7" data-aos="fade-up" data-aos-delay="130">
+                <div class="row" style="margin-bottom: 157px;height: 469px;overflow: auto;">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="position: relative;">
+                        <div class="work-button">
+                            LENDER: ETH PROVIDERS
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up" data-aos-delay="130">
+                        <div class="counter-style-7">
                             <div>
                                 <span class="counter-title">Step1</span>
                             </div>
@@ -158,37 +203,78 @@
                                 Deposit any amount of VELO or veVELO into Augusta
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom: 52.8px">
-                        <div class="counter-style-7" data-aos="fade-up" data-aos-delay="130">
+                        <div class="counter-style-7">
                             <div>
                                 <span class="counter-title">Step2</span>
                             </div>
                             <div class="counter-content">
-                                Receive auguVELO tokens in exchange for providing VELO
+                                Automatically begin earning AUGU and interest
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="margin-bottom: 52.8px">
-                        <div class="counter-style-7" data-aos="fade-up" data-aos-delay="130">
+                        <div class="counter-style-7">
                             <div>
                                 <span class="counter-title">Step3</span>
                             </div>
                             <div class="counter-content">
-                                Receive a share of the total veVELO rewards for staking auguVELO
+                                Providers’ rewards is earned over time. Claim rewards whenever it fits your schedule
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="counter-style-7" data-aos="fade-up" data-aos-delay="130">
+                        <div class="counter-style-7">
                             <div>
                                 <span class="counter-title">Step4</span>
                             </div>
                             <div class="counter-content">
-                                Receive reward boost with AUGU tokens.
+                                Withdraw your ETH tokens at any time
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="height: 469px;overflow: auto;">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up" data-aos-delay="130">
+                        <div class="counter-style-7">
+                            <div>
+                                <span class="counter-title">Step1</span>
+                            </div>
+                            <div class="counter-content">
+                                Stake veVELO tokens into Augusta
+                            </div>
+                        </div>
+                        <div class="counter-style-7">
+                            <div>
+                                <span class="counter-title">Step2</span>
+                            </div>
+                            <div class="counter-content">
+                                Borrow ETH tokens to enhance capital utilization
+                            </div>
+                        </div>
+                        <div class="counter-style-7">
+                            <div>
+                                <span class="counter-title">Step3</span>
+                            </div>
+                            <div class="counter-content">
+                                Automatically begin earning AUGU and veVELO APR
+                            </div>
+                        </div>
+                        <div class="counter-style-7">
+                            <div>
+                                <span class="counter-title">Step4</span>
+                            </div>
+                            <div class="counter-content">
+                                Stakers’ rewards is earned over time. Claim rewards whenever it fits your schedule
+                            </div>
+                        </div>
+                        <div class="counter-style-7">
+                            <div>
+                                <span class="counter-title">Step5</span>
+                            </div>
+                            <div class="counter-content">
+                                Repay at any time and pay the interest, then withdraw your veVELO tokens
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="position: relative;">
+                        <div class="work-button">
+                            BORROWER: veVELO STAKERS
                         </div>
                     </div>
                 </div>
@@ -298,10 +384,23 @@
                         decimals: 2,
                         icon: require('../../assets/images/counter/icon-two.png')
                     }
-                ]
+                ],
+                cardXWidth: 0,
+                containerHeight: '0px',
+                progress: 0,
+                innerWidth: 0,
+                wrapperWidth: 0,
+                maxProgress: 0
             }
         },
         mounted() {
+            this.cardXWidth = this.$refs.cardX.getBoundingClientRect().width;
+            this.containerHeight = `${428 + 2004 - this.cardXWidth}px`
+            this.innerWidth = window.innerWidth
+            this.wrapperWidth = this.$refs.cardXContent.offsetWidth
+            this.maxProgress = (428 + 2004 - this.cardXWidth) / 2004 * 100
+            console.log(this.maxProgress)
+            this.onScroll()
             window.addEventListener('scroll', this.onScroll)
         },
         beforeUnmount() {
@@ -310,12 +409,14 @@
         methods: {
             onScroll() {
                 const { scrollTop } = document.documentElement
-                const containerTop = this.$refs.cardX.offsetTop
-                const containerHeightNumber = this.$refs.cardX.offsetHeight
+                const containerTop = this.$refs.cardX.offsetTop + 428 - window.innerHeight
+                const containerHeightNumber = 428 + 2004 - this.cardXWidth
                 console.log(scrollTop)
                 console.log(containerTop)
                 console.log(containerHeightNumber)
-                const newProgress = ((scrollTop - containerTop) * 100) / (containerHeightNumber - innerHeight)
+                const newProgress = ((scrollTop - containerTop) * 100) / (containerHeightNumber - window.innerHeight + 428)
+                console.log(newProgress)
+                this.progress = newProgress
             }
         }
     }
@@ -324,17 +425,69 @@
 <style scoped lang="scss">
 .card-x{
     width: 100%;
-    height: calc(92px * 3 + 432px * 4);
     position: relative;
     overflow: hidden;
+    padding: 0;
     .card-x-content{
-        width: 100%;
         display: flex;
         height: 428px;
         .card-item {
             min-width: 432px;
             height: 428px;
+            border-radius: 19px;
+            border: 1px solid #A1FE04;
+            background: rgba(5, 8, 16, 0.35);
+            .image-content{
+                height: 219px;
+                background: #050810;
+                border-top-left-radius: 17px;
+                border-top-right-radius: 17px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .title{
+                padding: 31px 36px 32px 36px;
+                font-size: 32px;
+                font-family: 'Outfit';
+                font-weight: 900;
+                line-height: 22px;
+                color: white;
+            }
+            .desc{
+                padding: 0px 36px 0px 36px;
+                font-size: 28px;
+                font-family: 'Outfit';
+                line-height: 124%;
+                color: #ACADB0
+            }
         }
     }
 }
+
+.work-button{
+    width: 323px;
+    height: 79px;
+    border-radius: 15px;
+    background: #A1FE04;
+    font-size: 24px;
+    font-family: Outfit;
+    font-weight: 700;
+    line-height: 108.5%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: sticky;
+    top: 195px;
+    margin-left: calc(50% - 162.5px)
+}
+
+::-webkit-scrollbar {
+     width: 0 !important;
+   }
+   ::-webkit-scrollbar {
+     width: 0 !important;height: 0;
+   }
 </style>
