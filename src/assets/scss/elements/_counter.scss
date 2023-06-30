@@ -241,6 +241,7 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 49px;
+  transition: all .3s;
   &:hover {
     border: 1px solid #050810;
     box-shadow: 1px 1px 15px 1px #9eff00;

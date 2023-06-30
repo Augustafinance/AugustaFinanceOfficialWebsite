@@ -116,12 +116,16 @@
                     </div>
                 </div>
                 <div class="row" style="margin-top: 47px;">
+                    <ServiceTwo
+                        card-style="card-style-1"
+                        text-align="left"
+                    />
                     <!-- <ServiceSix
                         service-style="service__style--1 radius mt--25 service-six-border"
                         icon-size="62"
                         text-align="left"
                     /> -->
-                    <div class="card-x" ref="cardX" :style="{
+                    <!-- <div class="card-x" ref="cardX" :style="{
                         height: `${2004 - this.cardXWidth}px`,
                     }">
                         <div class="card-x-content"
@@ -170,7 +174,7 @@
                                 <div class="desc">Participate in Augusta governance voting with vlAUGU to share veNFT APR</div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -191,7 +195,7 @@
                     </div>
                 </div>
                 <div class="row" style="margin-bottom: 157px;height: 469px;overflow: auto;">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="position: relative;">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="position: relative;" data-aos="fade-up" data-aos-delay="130">
                         <div class="work-button">
                             LENDER: ETH PROVIDERS
                         </div>
@@ -274,7 +278,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="position: relative;">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="position: relative;" data-aos="fade-up" data-aos-delay="130">
                         <div class="work-button">
                             BORROWER: veVELO STAKERS
                         </div>
@@ -336,10 +340,11 @@
     import BlogPost from '../../components/blog/BlogPost'
     import ServiceSix from '../../components/elements/service/ServiceSix'
     import Counter from "../../components/elements/counterUp/Counter"
+    import ServiceTwo from '@/components/elements/service/ServiceTwo'
 
     export default {
         name: 'Business',
-        components: {BlogPost, Pricing, Accordion, Timeline, Tab, SectionTitle, Separator, Icon, Layout, Counter, ServiceSix},
+        components: {BlogPost, Pricing, Accordion, Timeline, Tab, SectionTitle, Separator, Icon, Layout, Counter, ServiceSix, ServiceTwo},
         mixins: [BlogPostMixin],
         data() {
             return {
@@ -396,16 +401,16 @@
             }
         },
         mounted() {
-            this.cardXWidth = this.$refs.cardX.getBoundingClientRect().width;
-            this.containerHeight = `${428 + 2004 - this.cardXWidth}px`
-            this.innerWidth = window.innerWidth
-            this.wrapperWidth = this.$refs.cardXContent.offsetWidth
-            this.maxProgress = (428 + 2004 - this.cardXWidth) / 2004 * 100
-            this.onScroll()
-            window.addEventListener('scroll', this.onScroll)
+            // this.cardXWidth = this.$refs.cardX.getBoundingClientRect().width;
+            // this.containerHeight = `${428 + 2004 - this.cardXWidth}px`
+            // this.innerWidth = window.innerWidth
+            // this.wrapperWidth = this.$refs.cardXContent.offsetWidth
+            // this.maxProgress = (428 + 2004 - this.cardXWidth) / 2004 * 100
+            // this.onScroll()
+            // window.addEventListener('scroll', this.onScroll)
         },
         beforeUnmount() {
-            window.removeEventListener('scroll')
+            // window.removeEventListener('scroll')
         },
         methods: {
             onScroll() {
