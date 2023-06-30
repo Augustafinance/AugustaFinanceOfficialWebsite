@@ -467,15 +467,16 @@
         padding: 100px 0;
     }
 
-    background: url('~@/assets/images/bg/top-bg.png') right bottom no-repeat;
-    background-size: auto;
+    background: url('~@/assets/images/bg/top-bg.png') right 90px bottom 150px no-repeat;
+    // background-size: auto;
+    background-size: 567px 325px;
 
     .inner {
         .title {
             font-family: var(--font-primary);
             margin-bottom: 62px;
             display: block;
-            font-size: 90px;
+            font-size: 86px;
             line-height: 1.09;
 
             @media #{$lg-layout} {
