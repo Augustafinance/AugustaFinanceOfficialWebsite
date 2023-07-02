@@ -1,6 +1,6 @@
 # AugustaFinanceOfficialWebsite
 
-Supercharger For DEFI In OP Stack.
+liquidity release protocol & governance hub.
 
 ## Project setup
 ```
