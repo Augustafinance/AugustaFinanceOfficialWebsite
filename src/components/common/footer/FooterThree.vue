@@ -29,7 +29,7 @@
                                     <h4 class="title">Resources</h4>
                                     <div class="inner">
                                         <ul class="footer-link link-hover">
-                                            <li><router-link to="/">Doc</router-link></li>
+                                            <li><a href="https://augusta-finance.gitbook.io">Doc</a></li>
                                         </ul>
                                     </div>
                                 </div>
