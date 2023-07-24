@@ -16,9 +16,9 @@
                             <router-link to="/" v-html="service.title"/>
                         </h4>
                         <p class="description b1 color-gray mb--0" v-html="service.description" style="min-height: 92px;color: #ACADB0 !important"/>
-                        <router-link class="btn-default btn-small btn-border" to="/">
+                        <a class="btn-default btn-small btn-border" :href="service.link">
                             Read More
-                        </router-link>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -44,22 +44,26 @@
                     {
                         image: require('@/assets/images/service/supply.png'),
                         title: 'SUPPLY',
-                        description: 'Supply your ETH to earn AUGU and APR'
+                        description: 'Supply your ETH to earn AUGU and APR',
+                        link: 'https://augusta-finance.gitbook.io/augusta-finance/liquidity-release/supply'
                     },
                     {
                         image: require('@/assets/images/service/borrow.png'),
                         title: 'BORROW',
-                        description: 'Deposit veVELO to borrow ETH and earn veVELO APR'
+                        description: 'Deposit veVELO to borrow ETH and earn veVELO APR',
+                        link: 'https://augusta-finance.gitbook.io/augusta-finance/liquidity-release/deposit-and-borrow'
                     },
                     {
                         image: require('@/assets/images/service/stake.png'),
                         title: 'STAKE',
-                        description: 'Deposit your AUGU into the protocol to get vlAUGU and earn rewards'
+                        description: 'Deposit your AUGU into the protocol to get vlAUGU and earn rewards',
+                        link: 'https://augusta-finance.gitbook.io/augusta-finance/resources/roadmap'
                     },
                     {
                         image: require('@/assets/images/service/vote.png'),
                         title: 'VOTE',
-                        description: 'Participate in Augusta governance voting with vlAUGU to share veNFT APR'
+                        description: 'Participate in Augusta governance voting with vlAUGU to share veNFT APR',
+                        link: 'https://augusta-finance.gitbook.io/augusta-finance/resources/roadmap'
                     }
                 ]
             }

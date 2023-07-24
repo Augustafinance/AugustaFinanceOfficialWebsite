@@ -30,6 +30,7 @@
                                     <div class="inner">
                                         <ul class="footer-link link-hover">
                                             <li><a href="https://augusta-finance.gitbook.io">Doc</a></li>
+                                            <li><a href="https://medium.com/@augustafinance">Medium</a></li>
                                         </ul>
                                     </div>
                                 </div>
