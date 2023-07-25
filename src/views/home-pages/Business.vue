@@ -206,7 +206,7 @@
                                 <span class="counter-title">Step1</span>
                             </div>
                             <div class="counter-content">
-                                Deposit any amount of VELO or veVELO into Augusta
+                                Deposit any amount of ETH into Augusta
                             </div>
                         </div>
                         <div class="counter-style-7">
