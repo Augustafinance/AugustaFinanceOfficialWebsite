@@ -13,11 +13,17 @@ import VueScrollActive from 'vue-scrollactive'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import VueTypedJs from 'vue-typed-js'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.config.productionTip = false
 Vue.use(CoolLightBox)
 Vue.use(VueScrollActive)
 Vue.use(VueTypedJs)
+Vue.use(ElementUI)
+Vue.prototype.$account = {
+  metamask: '',
+}
 
 new Vue({
   router,
