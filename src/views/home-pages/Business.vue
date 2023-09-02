@@ -404,7 +404,7 @@ export default {
         },
         {
           number: 0,
-          title: 'Total Borrow osite',
+          title: 'Total Borrowed',
           suffix: '%',
           decimals: 2,
           icon: require('../../assets/images/counter/icon-one.svg'),
@@ -426,7 +426,7 @@ export default {
         },
         {
           number: 0,
-          title: 'Borror APR',
+          title: 'Borrow APR',
           suffix: '%',
           decimals: 2,
           icon: require('../../assets/images/counter/icon-three.svg'),
